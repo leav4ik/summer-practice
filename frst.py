@@ -26,5 +26,3 @@ data = [{"x": float(x), "y": float(y)} for x, y in zip(x_val, y_val)]
 
 with open(file_path, 'w', encoding='utf-8') as file:
     json.dump({"data": data}, file, indent=4, ensure_ascii=False)
-
-print('success')
