@@ -1,5 +1,6 @@
 import numpy as np
 import json
+import matplotlib.pyplot as plt
 from pathlib import Path
 
 script_dir = Path(__file__).parent.resolve()
@@ -26,3 +27,12 @@ data = [{"x": float(x), "y": float(y)} for x, y in zip(x_val, y_val)]
 
 with open(file_path, 'w', encoding='utf-8') as file:
     json.dump({"data": data}, file, indent=4, ensure_ascii=False)
+
+plt.figure(figsize=(10, 6))
+plt.plot(x_val, y_val, linewidth=2, label='f(x)')
+plt.title('График функции')
+plt.xlabel('x')
+plt.ylabel('f(x)')
+plt.grid(True)
+plt.legend()
+plt.show()
