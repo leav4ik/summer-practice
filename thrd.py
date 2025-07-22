@@ -30,7 +30,7 @@ fig.colorbar(surf1, ax=ax1, shrink=0.5, aspect=5)
 
 ax2 = fig.add_subplot(222, projection='3d')
 surf2 = ax2.plot_surface(X1, X2, Y, cmap=cm.coolwarm, linewidth=0, antialiased=False)
-ax2.view_init(elev=90, azim=-90)  # Вид строго сверху
+ax2.view_init(elev=90, azim=-90)
 ax2.set_xlabel('x1')
 ax2.set_ylabel('x2')
 ax2.set_zlabel('y = f(x1, x2)')
