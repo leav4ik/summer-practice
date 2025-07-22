@@ -5,7 +5,7 @@ from mpl_toolkits.mplot3d import Axes3D
 
 def f(x1, x2):
     term = np.abs(100 - np.sqrt(x1**2 + x2**2) / np.pi)
-    return -0.0001 * ((np.abs(np.sin(x1) * np.sin(x2) * np.exp(term)) + 1)**0.01)
+    return -0.0001 * ((np.abs(np.sin(x1) * np.sin(x2) * np.exp(term)) + 1)**0.1)
 
 x10, x20 = 1.3491, 1.3491
 x1_range = [-2.0, 2.0]
