@@ -25,7 +25,7 @@ surf1 = ax1.plot_surface(X1, X2, Y, cmap=cm.coolwarm, linewidth=0, antialiased=F
 ax1.set_xlabel('x1')
 ax1.set_ylabel('x2')
 ax1.set_zlabel('y = f(x1, x2)')
-ax1.set_title('3D поверхность (изометрический вид)')
+ax1.set_title('Изометрический вид')
 fig.colorbar(surf1, ax=ax1, shrink=0.5, aspect=5)
 
 ax2 = fig.add_subplot(222, projection='3d')
@@ -34,7 +34,7 @@ ax2.view_init(elev=90, azim=-90)
 ax2.set_xlabel('x1')
 ax2.set_ylabel('x2')
 ax2.set_zlabel('y = f(x1, x2)')
-ax2.set_title('Вид сверху (проекция на XOY)')
+ax2.set_title('Вид сверху')
 fig.colorbar(surf2, ax=ax2, shrink=0.5, aspect=5)
 
 ax3 = fig.add_subplot(223)
